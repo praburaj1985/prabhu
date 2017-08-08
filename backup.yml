@@ -1,0 +1,10 @@
+---
+- name: backup_checklist!
+  hosts: all
+  user: root
+
+
+  tasks:
+
+    - name: Go to the folder and execute command
+      command: chdir=/ | du -sh /*
