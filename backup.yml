@@ -1,10 +1,10 @@
 ---
 - name: backup_checklist!
   hosts: 192.168.0.152
-  user: root
+  user: semaphore
 
 
   tasks:
 
     - name: Go to the folder and execute command
-      command: df -h
+      command: ls -l
